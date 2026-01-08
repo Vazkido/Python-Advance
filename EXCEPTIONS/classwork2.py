@@ -31,7 +31,7 @@ def ask_for_int(message, min_val, max_val, retries):
         except ValueError:
             # Happens if the user types something that's not a number
             print(f"Invalid Input. Please Enter a Number: ")
-            lives_used += 1
+            lives_used += 1 
             continue
     # If we get here, then the user types something that's not a number.
     raise TooManyAttemptsError("Too many invalids attempts")

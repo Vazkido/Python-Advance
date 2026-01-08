@@ -1,4 +1,4 @@
-
+import os
 # f= open("test.txt", "r", encoding="utf-8")
 # lines= f.readlines()
 # print(lines[2])
@@ -62,6 +62,33 @@
 #     f.write("")
 
 # user_name = input("Enter Visitor's name: ")
+
+
+# MAKING USE OF THE IMPORT OS FOR PYTHON TO INTERACT WITH MY COMPUTER LOCALLY FOR BASIC PYTHON FILE DETECTION.
+
+# This is a relative file path.
+file_path = "life.txt"
+
+# This is an absolute file path.
+# file_path = "C:/Users/USER/Desktop/NCAIR/PYTHON/Python Advanced/REGEX"
+
+# if os.path.exists(file_path):
+#     print(f"The file is located at '{file_path}' ")
+#     if os.path.isfile(file_path):
+#         print("This is a file")
+#     elif os.path.isdir(file_path):
+#         print("This is a directory.")
+# else:
+#     print("File path does not exist.") 
+
+# OLD WAY IN PYTHON TO READ A FILE
+# f = open("life.txt", "r")
+# print(f.read())
+# print(f.readlines())
+
+with open("life.txt", "w") as f:
+    f.write("I am a King! \n")
+
 
 
 
